@@ -1,7 +1,7 @@
 package veiculo
 
-open class Veiculo (val quantidadeRodas: Int, val cor: String, val tamanho: String): Combustivel {
+interface Veiculo : Combustivel {
 
     override fun abastecer() = "Abastendendo "
-    open fun acelerar() = "Acelerando"
+    fun acelerar() = "Acelerando"
 }

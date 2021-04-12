@@ -2,7 +2,7 @@ package motocicleta
 
 import veiculo.Veiculo
 
-class Moto (quantidadeRodas: Int, cor: String, tamanho: String): Veiculo(quantidadeRodas, cor, tamanho) {
+interface Moto : Veiculo {
 
     override fun abastecer() = "Abastendendo com gasolina "
     override fun acelerar() = "Acelerando"

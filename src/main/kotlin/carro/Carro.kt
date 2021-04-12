@@ -1,11 +1,9 @@
 package carro
 
-import veiculo.Veiculo
+interface Carro {
 
-class Carro (quantidadeRodas: Int, cor: String, tamanho: String): Veiculo(quantidadeRodas, cor, tamanho) {
-
-    override fun abastecer() = "Abastendendo com Alcool "
-    override fun acelerar() = "Acelerando"
+    fun abastecer() = "Abastendendo com Alcool "
+    fun acelerar() = "Acelerando"
     fun ligar() = "Ligando"
     fun freiar() = "Freiando"
 }

@@ -2,7 +2,7 @@ package caminhao
 
 import veiculo.Veiculo
 
-class Caminhao (quantidadeRodas: Int, cor: String, tamanho: String): Veiculo(quantidadeRodas, cor, tamanho) {
+interface Caminhao : Veiculo {
 
     override fun abastecer() = "Abastendendo com gasolina "
     override fun acelerar() = "Acelerando"

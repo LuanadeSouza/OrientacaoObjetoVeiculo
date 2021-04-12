@@ -2,7 +2,7 @@ package bicicleta
 
 import veiculo.Veiculo
 
-class Bicicleta (quantidadeRodas: Int, cor: String, tamanho: String): Veiculo(quantidadeRodas, cor, tamanho) {
+interface Bicicleta : Veiculo {
 
     fun ligar() = "pedalando"
     fun freiar() = "freaindo"
